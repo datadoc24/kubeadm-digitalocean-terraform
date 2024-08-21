@@ -28,6 +28,7 @@ ssh -i ~/.ssh/vtadmin.pem root@$W1_IP "$KUBEJOIN" &
 ssh -i ~/.ssh/vtadmin.pem root@$W2_IP "$KUBEJOIN" &
 
 wait
-scp -i $DO_SSH_KEYFILE root@$MASTER_IP:/etc/kubernetes/admin.conf ~/.kube/config
+scp -i $DO_SSH_KEYFILE root@$MASTER_IP:/etc/kubernetes/admin.conf ~/.kube/do-config
+export KUBECONFIG=~/.kube/do-config
 
 echo "K8S cluster setup complete and kubeconfig copied to local host"
