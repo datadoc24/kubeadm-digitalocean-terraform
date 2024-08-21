@@ -19,10 +19,10 @@ chmod +x install-opentofu.sh
 ## Creating and destroying a Kubernetes cluster
 
 1 - export the personal access token you obtained in step 2 above, and the location of your private key
-'''
+```
 export DO_PAT="dop_v1_98059b7430aa32fe918c4xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 export DO_SSH_KEYFILE=/path/to/your/key.pem
-'''
+```
 2 - cd into the directory that was created when you cloned this repo, then execute the create-do-k8s.sh script
 ```
 cd kubeadm-digitalocean-terraform
