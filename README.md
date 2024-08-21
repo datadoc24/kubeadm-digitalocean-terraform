@@ -28,7 +28,7 @@ export DO_SSH_KEYFILE=/path/to/your/key.pem
 cd kubeadm-digitalocean-terraform
 ./create-do-k8s.sh
 ```
-The script creates 3 droplets (1 master, 2 workers); installs and configures kubernetes packages and containerd on all of them ; initializes kubernetes on the master; executes the kubeadm join command on the 2 workers; adds entries to your /etc/hosts file for k8m1, k8w1, k8w2; and copies the kubeconfig to ~/.kube/do-config on your local host for subsequent use with your local kubectl instance (export KUBECONFIG=~/.kube/do-config to use it)
+The script creates 3 droplets (1 master, 2 workers); installs and configures kubernetes packages and containerd on all of them ; initializes kubernetes on the master; executes the kubeadm join command on the 2 workers; adds entries to your /etc/hosts file for k8m1, k8w1, k8w2; and copies the kubeconfig to \~/.kube/do-config on your local host for subsequent use with your local kubectl instance (export KUBECONFIG=\~/.kube/do-config to use it)
 
 3 - when done, destroy the resources to stop spending $$:
 ```
