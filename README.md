@@ -1,5 +1,7 @@
 # Create a Kubernetes cluster on Digital Ocean using OpenTofu (Terraform)
-Creates a 1 master, 2 worker kubernetes cluster as new Digital Ocean droplets using OpenTofu, Bash and Kubeadm
+
+Creates a 1 master, 2 worker kubernetes cluster as new Digital Ocean droplets using OpenTofu, Bash and Kubeadm.
+
 Tired of spending $$ on keeping your Kubernetes lab running because you can't face reinstalling it? This script and terraform module will create new droplets in your Digital Ocean account and install a cluster on them using kubeadm, then copy the kubeconfig to your local host. The entire process takes only a couple of minutes. When done, quickly destroy the resources using tofu destroy. 
 
 
